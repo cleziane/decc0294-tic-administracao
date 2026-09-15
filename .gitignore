@@ -16,6 +16,4 @@ dados/restrito/
 modelo/
 __pycache__/
 
-# saidas de aluno, quando a pasta for usada como projeto
-entregas/
-saidas/
+# saidas e entregas agora sao rastreadas pelo git

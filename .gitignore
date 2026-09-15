@@ -11,9 +11,11 @@ Thumbs.db
 desktop.ini
 .DS_Store
 
-# saidas de aluno, quando a pasta for usada como projeto
-entregas/
-saidas/
+# dados restritos e saidas locais
 dados/restrito/
 modelo/
 __pycache__/
+
+# saidas de aluno, quando a pasta for usada como projeto
+entregas/
+saidas/

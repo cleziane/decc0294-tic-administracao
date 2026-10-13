@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Análise de Turnover — Rascunho para apresentação</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #f2f2f2; color: #222; margin: 0; padding: 0; }
+  .caixa { max-width: 900px; margin: 24px auto; padding: 24px; background: #fff; border: 1px solid #ccc; }
+  h1 { font-size: 22px; margin: 0 0 4px 0; }
+  .meta { font-size: 14px; color: #555; margin-bottom: 16px; }
+  .aviso { background: #fff8e1; border: 1px solid #e6c200; padding: 10px 12px; font-size: 14px; margin: 12px 0; }
+  h2 { font-size: 17px; margin-top: 24px; border-bottom: 2px solid #333; padding-bottom: 4px; }
+  .kpis { display: flex; gap: 12px; flex-wrap: wrap; margin: 12px 0; }
+  .kpi { flex: 1 1 160px; border: 1px solid #ccc; padding: 12px; text-align: center; }
+  .kpi b { display: block; font-size: 24px; margin-bottom: 4px; }
+  .kpi span { font-size: 13px; color: #555; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 8px 0; }
+  th, td { border: 1px solid #bbb; padding: 8px; text-align: left; }
+  th { background: #eee; }
+  .bar { background: #e0e0e0; height: 14px; position: relative; }
+  .fill { background: #444; height: 14px; }
+  .fonte { font-size: 12px; color: #666; }
+  ul { font-size: 14px; }
+  li { margin-bottom: 6px; }
+  .nota { margin-top: 24px; font-size: 13px; color: #555; border-top: 1px solid #ccc; padding-top: 12px; }
+  @media print { body { background: #fff; } .caixa { border: none; margin: 0; } }
+</style>
+</head>
+<body>
+<div class="caixa">
+  <h1>Turnover CLT operacional — Vestuário (RASCUNHO)</h1>
+  <div class="meta">Data: 13/10/2026 — Base fictícia para estudo — Autor: [PREENCHER]</div>
+  <div class="aviso"><b>Rascunho.</b> Dados sintéticos. Não usar nome completo. Usar ID + cargo. Definições: Turnover = desligados / headcount médio. Headcount = total de vínculos.</div>
+
+  <h2>1. Objetivo</h2>
+  <p>Apresentar taxa de 12 meses, quebra por departamento e lista de risco. Período: 12 meses até out/2026.</p>
+
+  <h2>2. KPIs</h2>
+  <div class="kpis">
+    <div class="kpi"><b>22,0%</b><span>Turnover 12m = 11 / 50</span></div>
+    <div class="kpi"><b>11 / 39</b><span>Desligados / Ativos</span></div>
+    <div class="kpi"><b>54,5%</b><span>Voluntário (6/11)</span></div>
+    <div class="kpi"><b>3</b><span>Ativos em risco alto</span></div>
+  </div>
+  <p class="fonte">Fonte: saidas/rh_vestuario_50_funcionarios.csv: Status, ID, Motivo_Desligamento. Período 12m.</p>
+  <p class="fonte">Fórmula: Turnover 12m = desligados / headcount médio. Headcount médio = 50 com reposição.</p>
+
+  <h2>3. Taxa por departamento</h2>
+  <table>
+    <tr><th>Departamento / Cargo</th><th>Total</th><th>Desligados</th><th>Taxa</th><th>Visual</th></tr>
+    <tr><td>Vendas / Vendedor</td><td>26</td><td>5</td><td>19,2%</td><td><div class="bar"><div class="fill" style="width:19.2%"></div></div></td></tr>
+    <tr><td>Caixa / Operador de Caixa</td><td>12</td><td>3</td><td>25,0%</td><td><div class="bar"><div class="fill" style="width:25%"></div></div></td></tr>
+    <tr><td>Estoque / Auxiliar de Estoque</td><td>12</td><td>3</td><td>25,0%</td><td><div class="bar"><div class="fill" style="width:25%"></div></div></td></tr>
+    <tr><td><b>Total</b></td><td><b>50</b></td><td><b>11</b></td><td><b>22,0%</b></td><td></td></tr>
+  </table>
+  <p class="fonte">Fonte: rh_vestuario_50_funcionarios.csv: Departamento, Cargo, Status. Período 12m.</p>
+
+  <h2>4. Quebras</h2>
+  <table>
+    <tr><th>Corte</th><th>Desligados (n=11)</th><th>Ativos (n=39)</th></tr>
+    <tr><td>Tempo de casa médio / mediana</td><td>4,4a / 4,4a</td><td>4,0a / 4,1a</td></tr>
+    <tr><td>Avaliação 1-2</td><td>11/11 (nota1=2, nota2=9)</td><td>0/39</td></tr>
+    <tr><td>Faltas &gt;5 em 12m</td><td>7/11</td><td>3/39</td></tr>
+    <tr><td>Meta &lt;95% (média)</td><td>10/11 (média 83,6%)</td><td>16/39 (média 98,3%)</td></tr>
+  </table>
+  <p class="fonte">Fonte: rh_vestuario_50_funcionarios.csv: Tempo_Casa_anos, Avaliacao_Desempenho_1_5, Faltas_12m, Atingimento_Meta_pct. Período 12m.</p>
+  <p class="fonte">Vendas por vendedor: NAO SEI. Arquivo saidas/vendas_mensais_por_vendedor.csv não existe.</p>
+
+  <h2>5. Lista de risco — ativos</h2>
+  <p>Critério: avaliação 1-2, faltas &gt;5, meta &lt;95%. Alto = 2+ critérios.</p>
+  <table>
+    <tr><th>ID + Cargo</th><th>Dept</th><th>Aval</th><th>Faltas</th><th>Meta</th><th>Tempo</th></tr>
+    <tr><td>F038 — Operador de Caixa</td><td>Caixa</td><td>3</td><td>12</td><td>86,7%</td><td>2,6a</td></tr>
+    <tr><td>F010 — Vendedor</td><td>Vendas</td><td>3</td><td>6</td><td>87,2%</td><td>5,0a</td></tr>
+    <tr><td>F050 — Auxiliar de Estoque</td><td>Estoque</td><td>4</td><td>12</td><td>94,3%</td><td>0,6a</td></tr>
+  </table>
+  <p class="fonte">Fonte: rh_vestuario_50_funcionarios.csv: Avaliacao_Desempenho_1_5, Faltas_12m, Atingimento_Meta_pct. Período 12m. LGPD-safe: só ID + cargo.</p>
+
+  <h2>6. Interpretação</h2>
+  <ul>
+    <li><b>O que aconteceu:</b> saída de 22,0%. Foco em nota baixa. Caixa e Estoque acima de Vendas.</li>
+    <li><b>Por que importa:</b> reposição de 11 postos custa tempo e treino. Meta baixa em 16 ativos indica risco futuro.</li>
+    <li><b>Limitação:</b> base fictícia. Sem mês de saída. Sem admissões. Sem vendas por vendedor.</li>
+  </ul>
+
+  <h2>7. Encaminhamento</h2>
+  <ul>
+    <li>A: PIP para 3 em risco alto. Custo baixo. Risco: não cobre outros 13 com meta baixa.</li>
+    <li>B: Rever escala no Caixa/Estoque. Custo médio. Risco: atrito.</li>
+    <li>C: Bônus por assiduidade + meta. Custo médio/alto. Risco: efeito curto.</li>
+  </ul>
+  <p>Decisão cabe ao estudante. Este artefato é rascunho.</p>
+
+  <div class="nota">
+    <p><b>O que veio dos dados:</b> taxas, motivos, quebras e lista de 3. <b>Decisão humana pendente:</b> objetivo final, público, prazo, autor e escolha entre A/B/C.</p>
+    <p><b>Fontes:</b> todas acima com arquivo, coluna e período. Vendas: NAO SEI.</p>
+  </div>
+</div>
+</body>
+</html>

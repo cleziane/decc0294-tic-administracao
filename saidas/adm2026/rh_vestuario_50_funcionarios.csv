@@ -1,0 +1,51 @@
+﻿ID;Cargo;Departamento;Tempo_Casa_anos;Avaliacao_Desempenho_1_5;Faltas_12m;Atingimento_Meta_pct;Status;Motivo_Desligamento
+F001;Vendedor;Vendas;5.2;3;0;94.2;Ativo;
+F002;Vendedor;Vendas;5.5;1;8;94.9;Desligado;Voluntario - pediu demissao
+F003;Vendedor;Vendas;3.5;3;0;90.1;Ativo;
+F004;Vendedor;Vendas;1.8;4;3;101.9;Ativo;
+F005;Vendedor;Vendas;1.9;5;3;116.5;Ativo;
+F006;Vendedor;Vendas;5.6;3;1;92.6;Ativo;
+F007;Vendedor;Vendas;7.7;2;1;94.7;Desligado;Voluntario - pediu demissao
+F008;Vendedor;Vendas;4.9;4;5;110.9;Ativo;
+F009;Vendedor;Vendas;4.4;2;12;67.8;Desligado;Voluntario - pediu demissao
+F010;Vendedor;Vendas;5.0;3;6;87.2;Ativo;
+F011;Vendedor;Vendas;5.7;3;0;91.2;Ativo;
+F012;Vendedor;Vendas;2.0;3;0;95.2;Ativo;
+F013;Vendedor;Vendas;5.2;3;1;93.6;Ativo;
+F014;Vendedor;Vendas;7.5;4;3;108.1;Ativo;
+F015;Vendedor;Vendas;1.5;3;4;74.4;Ativo;
+F016;Vendedor;Vendas;5.2;4;3;118.6;Ativo;
+F017;Vendedor;Vendas;6.8;3;5;98.8;Ativo;
+F018;Vendedor;Vendas;2.3;5;1;103.4;Ativo;
+F019;Vendedor;Vendas;7.0;4;1;87.9;Ativo;
+F020;Vendedor;Vendas;3.8;3;1;102.8;Ativo;
+F021;Vendedor;Vendas;4.6;4;1;108.5;Ativo;
+F022;Vendedor;Vendas;1.9;2;12;77.2;Desligado;Involuntario - faltas
+F023;Vendedor;Vendas;0.9;2;0;72.1;Desligado;Involuntario - faltas
+F024;Vendedor;Vendas;3.5;3;0;81.8;Ativo;
+F025;Vendedor;Vendas;8.0;5;2;102.8;Ativo;
+F026;Vendedor;Vendas;5.8;4;4;101.1;Ativo;
+F027;Operador de Caixa;Caixa;2.3;2;3;73.9;Desligado;Involuntario - faltas
+F028;Operador de Caixa;Caixa;7.6;2;6;85.5;Desligado;Voluntario - pediu demissao
+F029;Operador de Caixa;Caixa;4.1;5;0;106.6;Ativo;
+F030;Operador de Caixa;Caixa;5.2;3;3;87.1;Ativo;
+F031;Operador de Caixa;Caixa;6.1;5;3;101.7;Ativo;
+F032;Operador de Caixa;Caixa;2.7;5;0;101.9;Ativo;
+F033;Operador de Caixa;Caixa;7.1;2;6;97.3;Desligado;Involuntario - faltas
+F034;Operador de Caixa;Caixa;7.6;4;0;107.8;Ativo;
+F035;Operador de Caixa;Caixa;0.7;5;5;108.3;Ativo;
+F036;Operador de Caixa;Caixa;4.5;5;1;108.6;Ativo;
+F037;Operador de Caixa;Caixa;3.5;4;1;101.3;Ativo;
+F038;Operador de Caixa;Caixa;2.6;3;12;86.7;Ativo;
+F039;Auxiliar de Estoque;Estoque;3.6;2;2;83.2;Desligado;Voluntario - pediu demissao
+F040;Auxiliar de Estoque;Estoque;4.8;3;1;99.2;Ativo;
+F041;Auxiliar de Estoque;Estoque;0.8;3;3;105.1;Ativo;
+F042;Auxiliar de Estoque;Estoque;0.8;4;1;93.1;Ativo;
+F043;Auxiliar de Estoque;Estoque;1.9;5;0;93.8;Ativo;
+F044;Auxiliar de Estoque;Estoque;6.3;3;5;88.1;Ativo;
+F045;Auxiliar de Estoque;Estoque;1.0;4;2;89.3;Ativo;
+F046;Auxiliar de Estoque;Estoque;5.5;1;12;84.7;Desligado;Voluntario - pediu demissao
+F047;Auxiliar de Estoque;Estoque;3.3;5;1;102.0;Ativo;
+F048;Auxiliar de Estoque;Estoque;3.7;3;2;97.2;Ativo;
+F049;Auxiliar de Estoque;Estoque;2.1;2;8;88.5;Desligado;Involuntario - faltas
+F050;Auxiliar de Estoque;Estoque;0.6;4;12;94.3;Ativo;

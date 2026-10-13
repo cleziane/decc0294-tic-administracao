@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Reunião Liderança — Turnover (Rascunho 10min)</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #1a1a1a; color: #222; margin: 0; }
+  .deck { max-width: 960px; margin: 0 auto; padding: 20px; }
+  .slide { background: #fff; border-radius: 8px; padding: 28px 32px; margin: 16px 0; border-top: 8px solid #333; }
+  .slide.num1 { border-top-color: #111; }
+  h1 { font-size: 26px; margin: 0 0 6px 0; }
+  h2 { font-size: 20px; margin: 0 0 10px 0; }
+  .tag { display: inline-block; font-size: 12px; background: #eee; padding: 4px 8px; border-radius: 4px; margin-bottom: 10px; }
+  .meta { font-size: 13px; color: #666; }
+  .kpis { display: flex; gap: 10px; flex-wrap: wrap; margin: 12px 0; }
+  .kpi { flex: 1 1 150px; border: 1px solid #ccc; border-radius: 6px; padding: 12px; text-align: center; }
+  .kpi b { display: block; font-size: 26px; }
+  .kpi span { font-size: 12px; color: #555; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 10px 0; }
+  th, td { border: 1px solid #bbb; padding: 8px; text-align: left; }
+  th { background: #f0f0f0; }
+  .bar { background: #e5e5e5; height: 12px; border-radius: 6px; overflow: hidden; }
+  .fill { background: #333; height: 12px; }
+  .fonte { font-size: 11px; color: #777; margin-top: 6px; }
+  .fala { background: #f7f7f7; border-left: 4px solid #888; padding: 10px 12px; font-size: 13px; margin-top: 12px; }
+  ul { font-size: 15px; line-height: 1.5; }
+  li { margin-bottom: 6px; }
+  .nav { position: sticky; top: 0; background: #1a1a1a; color: #fff; padding: 10px 20px; font-size: 13px; display: flex; justify-content: space-between; }
+  .nota { font-size: 12px; color: #555; border-top: 1px solid #ccc; margin-top: 16px; padding-top: 10px; }
+  @media print { body { background: #fff; } .nav { display: none; } .slide { border: 1px solid #999; break-inside: avoid; } }
+</style>
+</head>
+<body>
+<div class="nav"><span>RASCUNHO — Reunião Liderança — 10 min — Só diagnóstico</span><span>Slide 1 a 6</span></div>
+<div class="deck">
+
+<div class="slide num1">
+<div class="tag">Slide 1/6 — 1 min — Capa</div>
+<h1>Turnover CLT operacional</h1>
+<p>Loja vestuário — Vendas, Caixa, Estoque — 50 vínculos.</p>
+<p class="meta">Data: 13/10/2026 — Autor: [PREENCHER] — Base fictícia para estudo.</p>
+<div class="fala"><b>Fala sugerida (30s):</b> Apresento diagnóstico de 12 meses. Sem decisão hoje. Só fatos e limites.</div>
+<p class="fonte">Fonte base: saidas/rh_vestuario_50_funcionarios.csv. Período 12m.</p>
+</div>
+
+<div class="slide">
+<div class="tag">Slide 2/6 — 1 min — Método</div>
+<h2>Como medimos</h2>
+<ul>
+<li>Turnover = desligados / headcount médio. Primeira definição.</li>
+<li>Headcount = total de vínculos no período. Primeira definição.</li>
+<li>Fórmula: 11 / 50 = 22,0%.</li>
+<li>Recorte: CLT operacional. Vendas 26, Caixa 12, Estoque 12.</li>
+</ul>
+<p class="fonte">Fonte: rh_vestuario_50_funcionarios.csv: Status, ID, Departamento. Período 12m.</p>
+<div class="fala"><b>Fala (1 min):</b> Usamos headcount médio 50 com reposição. Sem reposição seria 24,7%. Mantemos 22% como padrão.</div>
+</div>
+
+<div class="slide">
+<div class="tag">Slide 3/6 — 2 min — Taxa</div>
+<h2>Taxa geral e por área</h2>
+<div class="kpis">
+<div class="kpi"><b>22,0%</b><span>geral 11/50</span></div>
+<div class="kpi"><b>19,2%</b><span>Vendas 5/26</span></div>
+<div class="kpi"><b>25,0%</b><span>Caixa 3/12</span></div>
+<div class="kpi"><b>25,0%</b><span>Estoque 3/12</span></div>
+</div>
+<table><tr><th>Área</th><th>Taxa</th><th>Visual</th></tr>
+<tr><td>Vendas</td><td>19,2%</td><td><div class="bar"><div class="fill" style="width:19.2%"></div></div></td></tr>
+<tr><td>Caixa</td><td>25,0%</td><td><div class="bar"><div class="fill" style="width:25%"></div></div></td></tr>
+<tr><td>Estoque</td><td>25,0%</td><td><div class="bar"><div class="fill" style="width:25%"></div></div></td></tr>
+</table>
+<ul><li>Voluntário: 6/11 (54,5%). Involuntário faltas: 5/11 (45,5%).</li></ul>
+<p class="fonte">Fonte: rh_vestuario_50_funcionarios.csv: Departamento, Status, Motivo_Desligamento. Período 12m.</p>
+<div class="fala"><b>Fala (2 min):</b> Caixa e Estoque acima de Vendas. Mais da metade pediu demissão. Ponto de atenção para liderança.</div>
+</div>
+
+<div class="slide">
+<div class="tag">Slide 4/6 — 2,5 min — Quem saiu</div>
+<h2>Perfil dos 11 desligados</h2>
+<ul>
+<li>Avaliação 1-2: 11/11. Nota 1 = 2, nota 2 = 9.</li>
+<li>Faltas &gt;5: 7/11.</li>
+<li>Meta &lt;95%: 10/11. Média 83,6%.</li>
+<li>Tempo casa médio 4,4a. Mediana 4,4a.</li>
+</ul>
+<p class="fonte">Fonte: rh_vestuario_50_funcionarios.csv: Avaliacao_Desempenho_1_5, Faltas_12m, Atingimento_Meta_pct, Tempo_Casa_anos. Período 12m.</p>
+<div class="fala"><b>Fala (2 min):</b> Saída concentrada em baixo desempenho. Não foi saída de novatos. Maioria com anos de casa.</div>
+</div>
+
+<div class="slide">
+<div class="tag">Slide 5/6 — 2,5 min — Risco atual</div>
+<h2>Quem ficou e inspira cuidado</h2>
+<ul>
+<li>Ativos: 39. Avaliação 1-2: 0/39.</li>
+<li>Faltas &gt;5: 3/39. Meta &lt;95%: 16/39. Média 98,3%.</li>
+</ul>
+<table><tr><th>ID + Cargo</th><th>Aval</th><th>Faltas</th><th>Meta</th></tr>
+<tr><td>F038 — Operador de Caixa</td><td>3</td><td>12</td><td>86,7%</td></tr>
+<tr><td>F010 — Vendedor</td><td>3</td><td>6</td><td>87,2%</td></tr>
+<tr><td>F050 — Auxiliar de Estoque</td><td>4</td><td>12</td><td>94,3%</td></tr>
+</table>
+<p class="fonte">Fonte: rh_vestuario_50_funcionarios.csv: Avaliacao_Desempenho_1_5, Faltas_12m, Atingimento_Meta_pct. Período 12m. LGPD-safe: só ID + cargo.</p>
+<p class="fonte">Vendas por vendedor: NAO SEI. Arquivo vendas_mensais_por_vendedor.csv não existe.</p>
+<div class="fala"><b>Fala (2 min):</b> Risco alto em 3 casos. Risco médio por meta em outros 13. Sem expor nomes.</div>
+</div>
+
+<div class="slide">
+<div class="tag">Slide 6/6 — 1 min — Fechamento</div>
+<h2>O que sabemos e o que falta</h2>
+<ul>
+<li><b>O que aconteceu:</b> 22% em 12m. Foco em nota baixa.</li>
+<li><b>Por que importa:</b> reposição custa treino. Meta baixa persiste.</li>
+<li><b>Limitação:</b> base fictícia. Sem mês de saída. Sem vendas.</li>
+</ul>
+<p><b>Não decidimos hoje.</b> Opções para próxima reunião com custo:</p>
+<ul>
+<li>A: PIP para 3. Custo baixo.</li>
+<li>B: Revisar escala. Custo médio.</li>
+<li>C: Bônus assiduidade. Custo médio/alto.</li>
+</ul>
+<div class="nota"><b>Veio dos dados:</b> taxas e listas. <b>Decisão humana:</b> autor, ata, escolha A/B/C e prazo. Rascunho.</div>
+<div class="fala"><b>Fala (1 min):</b> Peço orientação: qual opção a liderança quer detalhar? Sem texto final pronto.</div>
+</div>
+
+</div>
+</body>
+</html>

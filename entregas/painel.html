@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Painel do projeto - DECC0294</title>
+<style>
+  :root{--vinho:#8D0333;--dourado:#D4B277;--teal:#0AB0AB}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Segoe UI",Calibri,Arial,sans-serif;color:#333;background:#f2f2f2;padding:0 0 48px}
+  header{background:var(--vinho);color:#fff;padding:26px 40px 22px}
+  header h1{font-size:26px;font-weight:700}
+  header p{margin-top:6px;font-size:15px;color:#f1d9e2}
+  .filete{height:10px;background:var(--dourado)}
+  main{max-width:1060px;margin:26px auto;padding:0 20px}
+  .cartoes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+  .cartao{background:#fff;border:1px solid #e0e0e0;border-top:5px solid var(--vinho);padding:18px 20px}
+  .cartao .rot{font-size:13px;font-weight:700;letter-spacing:1px;color:var(--vinho);text-transform:uppercase}
+  .cartao .numero{font-size:38px;font-weight:700;color:#1a1a1a;margin-top:6px;line-height:1.1}
+  .cartao .un{font-size:15px;font-weight:400;color:#666}
+  .cartao .comp{font-size:14px;margin-top:8px;color:#555}
+  .cartao .conc{font-size:15px;margin-top:12px;line-height:1.4;color:#1a1a1a}
+  .cartao .periodo{font-size:13px;margin-top:10px;color:#777}
+  .bloco{background:#fff;border:1px solid #e0e0e0;padding:22px 24px;margin-top:22px}
+  .bloco h2{font-size:19px;color:var(--vinho);margin-bottom:16px}
+  .grafico svg{width:100%;height:auto}
+  .grafico .cat{font-size:15px;fill:#333;text-anchor:end}
+  .grafico .val{font-size:15px;fill:#1a1a1a;font-weight:700}
+  .nota{font-size:13px;color:#777;margin-top:12px}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th{background:var(--vinho);color:#fff;text-align:left;padding:9px 10px;font-weight:700}
+  td{padding:8px 10px;border-bottom:1px solid #eee;vertical-align:top}
+  tr:nth-child(even) td{background:#fafafa}
+  footer{max-width:1060px;margin:22px auto 0;padding:0 20px;font-size:13px;color:#777}
+  .destinatario{background:#faf7f8;border:1px solid var(--dourado);padding:14px 18px;margin-top:22px;font-size:14px}
+</style>
+</head>
+<body>
+<div class="filete"></div>
+<header>
+  <h1>Painel do projeto</h1>
+  <p>DECC0294 &middot; Tecnologia da Informacao e Comunicacao Aplicada a Administracao &middot; UFMA</p>
+  <p>Atualizado em 13/10/2026 as 10:35</p>
+</header>
+<main>
+  <div class="cartoes">
+    <article class="cartao">
+      <span class="rot">Valor da produção agrícola</span>
+      <p class="numero">13936879 <span class="un">mil R$</span></p>
+      <p class="comp">contra valor de 2024: <strong>12972489</strong> <span style="color:#8D0333">+7.4%</span></p>
+      <p class="conc">O valor da produção agrícola do Maranhão em 2025 foi de R$ 13,94 bilhões, 7,4% acima de 2024</p>
+      <p class="periodo">2025</p>
+    </article>
+    <article class="cartao">
+      <span class="rot">Produção de soja em grão</span>
+      <p class="numero">4423088 <span class="un">toneladas</span></p>
+      <p class="comp">contra produção de 2024: <strong>4073259</strong> <span style="color:#8D0333">+8.6%</span></p>
+      <p class="conc">A produção de soja do Maranhão em 2025 foi de 4,42 milhões de toneladas, 8,6% acima de 2024</p>
+      <p class="periodo">2025</p>
+    </article>
+    <article class="cartao">
+      <span class="rot">Produção de milho em grão</span>
+      <p class="numero">2712134 <span class="un">toneladas</span></p>
+      <p class="comp">contra produção de 2024: <strong>2384065</strong> <span style="color:#8D0333">+13.8%</span></p>
+      <p class="conc">A produção de milho do Maranhão em 2025 foi de 2,71 milhões de toneladas, 13,8% acima de 2024</p>
+      <p class="periodo">2025</p>
+    </article>
+  </div>
+  <section class="bloco">
+    <h2>Valor da producao por produto - MA 2025</h2>
+    <div class="grafico"><svg viewBox="0 0 900 404" role="img" aria-label="Valor da producao por produto - MA 2025">
+<text x="238" y="33" class="cat">Soja (em grão)</text>
+<rect x="250" y="10" width="530.0" height="34" fill="#8D0333"></rect>
+<text x="790.0" y="33" class="val">8.921.025</text>
+<text x="238" y="81" class="cat">Milho (em grão)</text>
+<rect x="250" y="58" width="176.8" height="34" fill="#BDBDBD"></rect>
+<text x="436.8" y="81" class="val">2.975.809</text>
+<text x="238" y="129" class="cat">Cana-de-açúcar</text>
+<rect x="250" y="106" width="46.3" height="34" fill="#BDBDBD"></rect>
+<text x="306.3" y="129" class="val">778.886</text>
+<text x="238" y="177" class="cat">Arroz (em casca)</text>
+<rect x="250" y="154" width="18.2" height="34" fill="#BDBDBD"></rect>
+<text x="278.2" y="177" class="val">305.535</text>
+<text x="238" y="225" class="cat">Algodão herbáceo (em caroço)</text>
+<rect x="250" y="202" width="17.8" height="34" fill="#BDBDBD"></rect>
+<text x="277.8" y="225" class="val">299.591</text>
+<text x="238" y="273" class="cat">Mandioca</text>
+<rect x="250" y="250" width="13.7" height="34" fill="#BDBDBD"></rect>
+<text x="273.7" y="273" class="val">230.614</text>
+<text x="238" y="321" class="cat">Banana (cacho)</text>
+<rect x="250" y="298" width="8.3" height="34" fill="#BDBDBD"></rect>
+<text x="268.3" y="321" class="val">139.008</text>
+<text x="238" y="369" class="cat">Feijão (em grão)</text>
+<rect x="250" y="346" width="7.2" height="34" fill="#BDBDBD"></rect>
+<text x="267.2" y="369" class="val">121.969</text>
+</svg></div>
+    <p class="nota">A barra em destaque e a maior do conjunto. As demais aparecem em
+    cinza porque servem de contexto, e nao de comparacao principal.</p>
+  </section>
+  <section class="bloco">
+    <h2>De onde vem cada numero</h2>
+    <table>
+      <thead><tr><th>Indicador</th><th>Periodo</th><th>Fonte e filtro</th><th>Consulta</th></tr></thead>
+      <tbody>
+<tr><td>Valor da produção agrícola</td><td>2025</td><td>IBGE PAM tabela 5457 via API SIDRA, UF 21, variável 215 valor da produção</td><td>consulta-pam-ma-2025.csv</td></tr>
+<tr><td>Produção de soja em grão</td><td>2025</td><td>IBGE PAM tabela 5457 via API SIDRA, UF 21, variável 214, produto 40124 soja</td><td>consulta-pam-ma-2025.csv</td></tr>
+<tr><td>Produção de milho em grão</td><td>2025</td><td>IBGE PAM tabela 5457 via API SIDRA, UF 21, variável 214, produto 40122 milho</td><td>consulta-pam-ma-2025.csv</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <div class="destinatario">
+    <strong>Destinatario deste painel:</strong> Secretaria de Agricultura do Maranhão — gestão de grãos (MATOPIBA)<br>
+    <strong>Decisao que ele sustenta:</strong> Priorizar milho e soja na assistência técnica e logística, sem negligenciar arroz/mandioca/feijão para segurança alimentar
+  </div>
+</main>
+<footer>
+  Gerado em 13/10/2026 pelo script atividade_modulo8.py. Os numeros vieram das consultas
+  registradas no encontro 8 e podem ser refeitos a partir dos arquivos .sql citados.
+</footer>
+</body>
+</html>

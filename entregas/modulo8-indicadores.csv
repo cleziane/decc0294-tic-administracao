@@ -1,0 +1,4 @@
+indicador;titulo_conclusao;valor;unidade;periodo;comparacao;valor_comparacao;fonte;consulta
+Valor da produção agrícola;O valor da produção agrícola do Maranhão em 2025 foi de R$ 13,94 bilhões, 7,4% acima de 2024;13936879;mil R$;2025;valor de 2024;12972489;IBGE PAM tabela 5457 via API SIDRA, UF 21, variável 215 valor da produção;consulta-pam-ma-2025.csv
+Produção de soja em grão;A produção de soja do Maranhão em 2025 foi de 4,42 milhões de toneladas, 8,6% acima de 2024;4423088;toneladas;2025;produção de 2024;4073259;IBGE PAM tabela 5457 via API SIDRA, UF 21, variável 214, produto 40124 soja;consulta-pam-ma-2025.csv
+Produção de milho em grão;A produção de milho do Maranhão em 2025 foi de 2,71 milhões de toneladas, 13,8% acima de 2024;2712134;toneladas;2025;produção de 2024;2384065;IBGE PAM tabela 5457 via API SIDRA, UF 21, variável 214, produto 40122 milho;consulta-pam-ma-2025.csv
